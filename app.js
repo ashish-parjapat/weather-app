@@ -26,7 +26,7 @@ app.post("/", function(requ, resp) {
             var imageurl = "https: //openweathermap.org/img/wn/" + icon + "@2x.png ";
 
             resp.write("the weather is currently " + weatherdesc + "\n");
-            resp.write("<h1>the temperature  at shimla  is" + parti + "</h1> \n");
+            resp.write("<h1>the temperature  at " + cityname + " is " + parti + " </h1> \n");
             resp.write(" <img src = " + imageurl + " > ");
             resp.send()
         })
